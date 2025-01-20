@@ -24,9 +24,9 @@
 <table style="font-size: 28px" >
   <tr>
     <th></th>
-    <th>1</th>
-    <th>2</th>
-    <th>3</th>
+    <th>Séance 1</th>
+    <th>Séance 2</th>
+    <th>Séance 3</th>
   </tr>
   <tr>
     <td>Lundi</td>
