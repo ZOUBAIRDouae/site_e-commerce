@@ -10,5 +10,5 @@
 
 ## Useful Links
 
-- [Project Rapport](./rapport/index.html)
-- [Project Presentation](./presentation/index.html)
+- [Rapport](./rapport/index.html)
+- [Présentation](./presentation/index.html)
