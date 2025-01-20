@@ -1,9 +1,8 @@
 ## **site E-commerce**
 
-- Réalisée par:
-  - ZOUBAIR Douae
-- Encadrée par:
-  - Mr.ESSARRAJ Fouad
+ Réalisée par :  ZOUBAIR Douae
+  
+ Encadrée par:  Mr.ESSARRAJ Fouad
 
 ---
 
@@ -20,7 +19,7 @@
 ---
 
 ### **3. Planification:**
-
+> Semaine 1
 <table style="font-size: 28px" >
   <tr>
     <th></th>
