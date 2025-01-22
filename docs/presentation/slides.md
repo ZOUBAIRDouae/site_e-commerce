@@ -60,6 +60,46 @@
 </table>
 
 ---
+> Semaine 2
+<table style="font-size: 28px" >
+  <tr>
+    <th></th>
+    <th>Séance 1</th>
+    <th>Séance 2</th>
+    <th>Séance 3</th>
+  </tr>
+  <tr>
+    <td>Lundi</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Mardi</td>
+    <td>-</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Mercredi</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Jeudi</td>
+    <td>Réalisation</td>
+    <td>Réalisation</td>
+    <td>Réalisation</td>
+  </tr>
+  <tr>
+    <td>Vendredi</td>
+    <td></td>
+    <td></td>
+    <td>-</td>
+  </tr>
+</table>
+---
 
 ### **4. Branche technique:**
 
