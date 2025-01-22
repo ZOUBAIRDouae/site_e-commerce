@@ -90,7 +90,7 @@
 - Modifier un produit
 - Supprimer un produit
 - ajax (one-page)
-- repository
+- manager
 
 ---
 
