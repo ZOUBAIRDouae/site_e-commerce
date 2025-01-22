@@ -12,13 +12,29 @@
 
 ---
 
-### **2. Méthode 2TUP:**
+### **2. Méthode de travail:**
+
+- 2.1. Méthode Scrum
+- 2.2. Méthode 2TUP
+
+|||
+
+#### **2.1. Méthode Scrum**
+
+<img src="" />
+
+|||
+
+#### **2.2. Méthode 2TUP**
 
 <img src="assets/2_TUP.png" alt="2TUP" style="width: 600px; height: auto;" />
 
 ---
 
 ### **3. Planification:**
+||| 
+#### **3.1. Planification:**
+
 > Semaine 1
 <table style="font-size: 28px" >
   <tr>
@@ -58,6 +74,8 @@
     <td>-</td>
   </tr>
 </table>
+
+
 
 ---
 > Semaine 2
@@ -99,28 +117,95 @@
     <td>-</td>
   </tr>
 </table>
----
 
-### **4. Branche technique:**
+|||
 
+#### **3.2. Diagramme de Gantt:**
+
+
+
+### **4. Branche technique:
+
+- 4.1. Capture de besoins techniques
+- 4.2. Analyse technique
+- 4.3. Auto-formation
+
+|||
+
+#### **4.1. Capture de besoins techniques:**
+
+- Tailwind CSS
+- Ajax
+- Laravel
+- MySQL
+
+|||
+
+#### **4.2. Analyse technique:**
+
+- Laravel avencer
+- One page application (AJAX)
+
+|||
+
+#### **4.3. Aprentissage:**
+
+- Blade avancer
+- Controller avancer
+- Model avancé
+- Manager
+- Ajax
 
 ---
 
 ### **5. Branche fonctionnelle:**
 
 
+- 5.1. diagramme de cas d’utilisation
+- 5.2. Diagramme de cas d’utilisation sprint 1
+- 5.3. Diagramme de cas d’utilisation sprint 2
+
+|||
+
+#### **5.1. Diagramme de cas d’utilisation:**
+
+<img src="" alt="Diagramme de cas d’utilisation" height="500px">
+
+|||
+
+#### **5.2. Diagramme de cas d’utilisation sprint 1:**
+
+<img src="" alt="sprint 1" height="500px">
+
+|||
+
+#### **5.3. Diagramme de cas d’utilisation sprint 2:**
+
+<img src="" alt="sprint 2" height="500px">
 
 ---
 
-### **6. Apprentissage:**
 
-- Blade
-- Controller
-- Model
-- Repository
-- Ajax
+### **6. Conception:**
+
+- 6.1. Diagramme de class
+- 6.2. Maquette
+
+|||
+
+#### **6.1. Diagramme de class:**
+
+<img src="../assets/img/Diagramme_de_class.svg" alt="Diagramme de class" height="600px">
+
+|||
+
+#### **6.2. Maquette:**
+
+<img src="../assets/img/Maquette.svg" alt="Maquette" height="600px">
 
 ---
+
+
 
 ### **7. Prototype:**
 
@@ -129,8 +214,8 @@
 - Ajouter un produit
 - Modifier un produit
 - Supprimer un produit
-- ajax (one-page)
-- manager
+- Ajax (one-page)
+- Manager
 
 ---
 
