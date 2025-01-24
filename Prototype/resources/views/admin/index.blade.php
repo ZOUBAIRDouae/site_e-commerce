@@ -24,7 +24,7 @@
                 </thead>
                 <tbody>
                     @foreach($products as $product)
-                    <tr id="product-{{ $product->id }}">
+                    <tr  id="product-{{ $product->id }}">
                         <td>{{ $product->id }}</td>
                         <td>{{ $product->name }}</td>
                         <td>{{ $product->description }}</td>
@@ -85,12 +85,12 @@
                     if (res.success) {
                         
                         $('table tbody').append(`
-                            <tr id="product-{{ $product->id }}">
+                            <tr  id="product-${res.product.id}">
                                 <td>${res.product.id}</td>
                                 <td>${res.product.name}</td>
                                 <td>${res.product.description}</td>
                                 <td>
-                                    <button type="button" class="btn btn-danger btn-sm btnDelete" data-id="{{ $product->id }}">
+                                    <button type="button" class="btn btn-danger btn-sm btnDelete" data-id="${res.product.id}">
                                         Supprimer
                                     </button>
                                 </td>
@@ -199,4 +199,3 @@
     });
 </script>
 @endsection
-
