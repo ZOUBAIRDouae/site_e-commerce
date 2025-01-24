@@ -1,12 +1,4 @@
-@extends('layouts.admin')
 
-
-@section('content')
-<div class="card card-info card-outline mb-4 ">
-                  <!--begin::Header-->
-                  <div class="card-header"><div class="card-title">Ajouter Produit</div></div>
-                  <!--end::Header-->
-                  <!--begin::Form--> 
                   <form class="needs-validation" action="{{ route('products.store')}}" method="POST" id="addProduct">
                     @csrf
                     <!--begin::Body-->
@@ -21,8 +13,7 @@
                             class="form-control"
                             id="name"
                             value=""
-                              name="name"
-                         
+                            name="name"
                           />
                           <div class="valid-feedback">Looks good!</div>
                         </div>
@@ -34,24 +25,11 @@
                             type="text"
                             class="form-control"
                             id="description"
-                            name="content"
+                            name="description"
                             value=""
                            
                           />
                           <div class="valid-feedback">Looks good!</div>
-                        </div>
-                        <div class="col-md-6">
-                          <label for="validationCustom02" class="form-label">price</label>
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="price"
-                            name="content"
-                            value=""
-                           
-                          />
-                          <div class="valid-feedback">Looks good!</div>
-                        </div>
                         <!--end::Col-->
                         <!--begin::Col-->
                        
@@ -76,6 +54,5 @@
                     <!--end::Footer-->
                   </form>
                   <!--end::Form-->
-                </div>
+
     
-@endsection

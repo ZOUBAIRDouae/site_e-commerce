@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Product;
 use Illuminate\Http\Request;
+use Validator;
 
 use    App\Repositories\ProductRepository;
 
@@ -31,27 +32,33 @@ class ProductController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+        $validator = Validator::make($request->all(),[
             'name' => 'required',
             'description' => 'required',
-            'price' => 'required|numeric',
-            'category_id' => 'required',
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
         ]);
 
-        
-        $product = new Product();
+        if( $validator->fails())
+        {
+            return response()->json([
+                'status'=>400,
+                'errors' => $validator->messages(),
+            ]);
+        }
+        else
+        {
+            $product = new Product();
+            $product->name = $request->name;
+            $product->description = $request->description;
+            $product->save();
 
-        $product->name = $data['name'];
-        $product->description = $data['description'];
-        $product->price = $data['price'];
-        $$product->category_id = $data['category_id'];
-        $product->user_id = auth()->user()->id;
-        $product->image = $data['image']->store('public/images');
-        $product->save();
-        return redirect()->route('admin.index')->with('success', 'product created successfully!');
+            return response()->json([
+                'status'=>200,
+                'success' => true,
+                'product' => $product
+            ]);
+        }
     }
-
 
     public function show(Product $product)
     {
@@ -73,8 +80,17 @@ class ProductController extends Controller
  
     public function destroy($id)
     {
-        $product = Product::where('id', $id)->first();
-        $product->delete();
-        return redirect()->route('admin.index')->with('success', 'product deleted successfully!');
+        try {
+            $product = Product::findOrFail($id);
+            $product->delete();
+    
+            return response()->json(['success' => true, 'message' => 'Produit supprimé avec succès.']);
+        } catch (\Exception $e) {
+            return response()->json(['success' => false, 'message' => 'Produit introuvable ou erreur lors de la suppression.']);
+        }
     }
+    
+    
+    
+    
 }
